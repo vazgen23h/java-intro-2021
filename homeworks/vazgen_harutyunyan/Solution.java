@@ -8,7 +8,10 @@ Scanner scanner=new Scanner(System.in);
 x=scanner.nextInt();
 
 
-        boolean b=(x%3==0 && x>0 && x< 100);
-        System.out.print(b);
+boolean b=(x%3==0 && x>0 && x< 100);
+System.out.print(b);
+
+        
+       
 }
 } 
