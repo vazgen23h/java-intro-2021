@@ -23,7 +23,6 @@ public class Problem53 {
         if(number1 > k) {
             System.out.println(number1 / sum);
         } else {
-            System.out.println((double)(lastDigit / ((double)number1)));
-        }
+            System.out.println(lastDigit / (double)number1); // Change cast options.
     }
 }
