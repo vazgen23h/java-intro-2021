@@ -13,24 +13,22 @@ System.out.println("Enter a number with 3 digit");
 Scanner scanner = new Scanner(System.in);
 int number = scanner.nextInt();
 
-int min;
+
 int a = number % 10;
 number = number / 10;
 int b = number % 10;
 number = number /10;
 int c = number;
+int min = a;
 
-if(a <= b){
-  if(a <= c){
-     min = a;
-  } else {
-    min = c;
-  }
-} else if(b <= c){
-   min = b;
-} else {
-  min = c;
+
+if(min > b){
+  min = b;
+} 
+if(min > c) {
+   min = c;
 }
+
 
 System.out.println("min = " + min);
 

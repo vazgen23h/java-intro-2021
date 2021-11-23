@@ -13,24 +13,20 @@ System.out.println("Enter a number with 3 digit");
 Scanner scanner = new Scanner(System.in);
 int number = scanner.nextInt();
 
-int max;
+
 int a = number % 10;
 number = number / 10;
 int b = number % 10;
 number = number /10;
 int c = number;
+  
+int max = a;
  
-if(c >= b) {
- 
-   if(c >= a){
-      max = c;
-   } else {
-      max = a;     
-   }
- } else if(b >= a){
-     max = b;
- } else {
-     max = a;
+ if(max > b){
+   max = b;
+ } 
+ if (max > c) {
+   max = c;
  }
 
 System.out.println("max = " + max);
