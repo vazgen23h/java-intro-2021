@@ -16,7 +16,6 @@ public class Problem60 {
         if(firstDigit > secondDigit && firstDigit > lastDigit) {
             if(secondDigit > lastDigit) {
                 System.out.println(firstDigit + " " + secondDigit + " " + lastDigit);
-
             } else {
                 System.out.println(firstDigit + " " + lastDigit + " " + secondDigit);
             }
