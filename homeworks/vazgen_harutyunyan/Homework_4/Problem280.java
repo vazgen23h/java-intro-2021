@@ -18,14 +18,11 @@ public class Problem280 {
             }
         }
         char[] array2 = new char[n + quantityOfF];
-
+        int secondArrayIndex = 0;
         for(int i = 0; i < array1.length; i++) {
-            array2[i] = array1[i];
-        }
-        for(int i = 0; i < array2.length; i++) {
-            if(array2[i] == 'f') {
-                array2[i + 1] = 'f';
-                i++;
+            array2[secondArrayIndex++] = array1[i];
+            if(array1[i] == 'f') {
+                array2[secondArrayIndex++] = 'f';
             }
         }
         System.out.println("Your last array is");
