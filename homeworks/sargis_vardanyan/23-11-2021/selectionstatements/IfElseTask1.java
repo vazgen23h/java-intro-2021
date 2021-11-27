@@ -11,7 +11,7 @@ public class IfElseTask1{
 
 public static void main(String [] args){
 
-System.out.println("Enter a number with 3 digit");
+System.out.println("Enter a number with 3 digit");/home/narek/Tech42
 
 Scanner scanner = new Scanner(System.in);
 int number = scanner.nextInt();

@@ -1,4 +1,4 @@
-package homeworks.sargis_vardanyan;
+package sargis_vardanyan;
 
 import java.util.Scanner;
 
