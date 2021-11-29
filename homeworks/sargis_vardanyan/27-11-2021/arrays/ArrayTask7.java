@@ -18,35 +18,24 @@ public class ArrayTask7 {
         int [][] matrix = new int [m][m];
         
         for (int i = 0; i < matrix.length; i++) {
-            matrix [i][0] = i;
             for (int j = 0; j < matrix.length; j++) {
-                matrix [i][0] = j;
+                matrix [i][j] = (i + 1) * (matrix.length -1);
             }
         }
              
         int[] B = new int[m];
-
-        for (int k = 0; k < matrix.length; k++) {
-            int temp = 0;
-            for (int i = 0; i < matrix.length; i++) {
-                for (int j = 0; j < matrix.length - i; j++) {
-                    if (i < j) {
-                        temp += matrix[i + j][j];
-                    } else if (i + j > matrix.length) {
-                        temp += matrix[i - j][j];
-                    } else {
-                        temp += (matrix[i - j][j] + matrix[i + j][j]);
-                    }
-                }
-            }
-            B[k] = temp / (matrix.length + 1);
+        
+        for (int i = 0, j = 0; i < B.length; i++, j++) {
+            B [i] = (matrix[i][j] + matrix[i][matrix.length - 1 - j]) / 2;    
         }
-
-        System.out.print("B vector: ");
+        
+        System.out.print("B: ");
         for (int i = 0; i < B.length; i++) {
             System.out.print(B[i] + ", ");
         }
-        System.out.println(); 
+        System.out.println();
+
+       
     }
 
 }
