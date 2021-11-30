@@ -1,6 +1,6 @@
 import java.util.Scanner; 
 
-//Task 55, homework 3
+//Task 56, homework 3
 
 public class RatioOfDigits2{
 

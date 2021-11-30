@@ -11,7 +11,7 @@ public class Task280 {
 		int n = console.nextInt();
 		char[] arr = new char[n];
 
-		System.out.println("Enter " + n + " chars: ");
+		System.out.println("Enter your chars: ");
 		console = new Scanner(System.in);
 
 		for (int i = 0; i < arr.length; i++) {

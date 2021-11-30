@@ -11,7 +11,7 @@ public class Task277 {
 		char[] arr = new char[n];
 		int redundantD = 0;
 
-		System.out.println("Your " + n + " chars are: ");
+		System.out.println("Enter your chars: ");
 		console = new Scanner(System.in);
 
 		for (int i = 0; i < arr.length; i++) {
