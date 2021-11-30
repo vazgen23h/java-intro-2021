@@ -3,7 +3,7 @@ package arrays1;
 import java.util.Scanner;
 
 /*
-   There is given a two dimensional array sized m to n, where m & n are total numbers.
+   task 552: There is given a two dimensional array sized m to n, where m & n are total numbers.
    Compute and print array's member which is the biggest in its line and the smallest in column 
    if it exists, otherwise print NO.
 */

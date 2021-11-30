@@ -3,7 +3,7 @@ package arrays1;
 import java.util.Scanner;
 
 /*
-   There is given a two dimensional array, sized m to m,
+   task 476: There is given a two dimensional array, sized m to m,
    where m is a total number. Compute and print line k's maximum member.
 */
 

@@ -3,7 +3,7 @@ package arrays1;
 import java.util.Scanner;
 
 /*
-   There is given a two dimensional array, sized n to n,
+   task 487: There is given a two dimensional array, sized n to n,
    where n is a total number. Compute and print array's positive members sum, if
    array is simmetrical to its main diagonal, otherwise print NO.
 */

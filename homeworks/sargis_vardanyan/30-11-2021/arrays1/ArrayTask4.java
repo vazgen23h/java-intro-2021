@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 /*
-  There is given a two dimensional array sized m to n,
+  task 492: There is given a two dimensional array sized m to n,
   which has only one minimum and maximum member
   (where m and n are natural numbers). Make a program which will swap the lines
   containing maximum and minimum members.

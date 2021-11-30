@@ -3,7 +3,7 @@ package arrays1;
 import java.util.Scanner;
 
 /*
-   There is given a two dimensional array sized m to n. Compute and print the columns number, 
+   task 544: There is given a two dimensional array sized m to n. Compute and print the columns number, 
    that are similar to array's last column. 
    Columns said to be similar, if matching index members are the same.
 */

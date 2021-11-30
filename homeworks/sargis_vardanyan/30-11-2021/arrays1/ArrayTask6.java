@@ -3,7 +3,7 @@ package arrays1;
 import java.util.Scanner;
 
 /*
-   m and n are given natural numbers. Also there are given array with size of m and d number.
+   task 520: m and n are given natural numbers. Also there are given array with size of m and d number.
    Compute and print two dimensional array with size of m to n which first column is same as given array, 
    and each next column's members are their previous columns members added by d. 
 */

@@ -3,7 +3,7 @@ package arrays1;
 import java.util.Scanner;
 
 /*
-  There is given a two dimensional array sized by m to n. Without using (if) operator 
+  task 529: There is given a two dimensional array sized by m to n. Without using (if) operator 
   compute and print array's odd lines members arithmetic mean.
 */
 

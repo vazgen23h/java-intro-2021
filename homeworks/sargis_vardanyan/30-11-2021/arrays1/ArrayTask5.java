@@ -3,7 +3,7 @@ package arrays1;
 import java.util.Scanner;
 
 /*
-   There is given a two dimensional array sized n to n.
+   task 505: There is given a two dimensional array sized n to n.
    Compute a new array, which members are twoDim array's line's members multiplication 
    that are located before the line's biggest member. 
 */

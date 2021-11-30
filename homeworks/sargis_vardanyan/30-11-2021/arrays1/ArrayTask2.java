@@ -3,7 +3,7 @@ package arrays1;
 import java.util.Scanner;
 
 /*
-   There is given a two dimensional array, sized m to m,
+   task 480: There is given a two dimensional array, sized m to m,
    where m is a total number. Compute and print auxiliary diagonal's biggest member's line number.
 */
 
