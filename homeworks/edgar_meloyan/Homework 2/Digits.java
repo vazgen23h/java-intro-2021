@@ -11,7 +11,7 @@ public class Digits {
         char f = 'a';
         int n = console.nextInt();
         int a = n / 100;
-        int b = (n % 100)/10;
+        int b = (n % 100) / 10;
 
         if (a + b < 5){
            

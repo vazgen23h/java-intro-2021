@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//Task 55, Homework 3
+
 public class MinDigit{
 	
 	public static void main(String[] args){

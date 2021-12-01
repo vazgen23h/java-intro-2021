@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//Task 54, Homework 3
 public class MaxDigit{
 
 	public static void main(String[] args){
