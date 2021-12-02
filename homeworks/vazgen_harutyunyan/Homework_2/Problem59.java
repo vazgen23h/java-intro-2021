@@ -13,7 +13,35 @@ public class Problem59 {
         secondDigit = number % 10;
         number = number / 10;
         firstDigit = number;
-        if(firstDigit > secondDigit && firstDigit > lastDigit) {
+        
+        if(firstDigit<secondDigit){
+            if(secondDigit<lastDigit){
+                System.out.println(firstDigit+" "+ secondDigit+" "+lastDigit);
+            }
+            else if(lastDigit<secondDigit){
+                if(firstDigit<lastDigit){
+                    System.out.println(firstDigit+" "+lastDigit+" "+secondDigit);
+                }
+                else{
+                    System.out.println(lastDigit+" "+firstDigit+" "+secondDigit);
+                }
+            }
+        }
+      else if(secondDigit<firstDigit ){
+          if(firstDigit<lastDigit){
+              System.out.println(secondDigit+" "+firstDigit+" "+lastDigit);
+          }
+          else if(lastDigit<firstDigit){
+              if(secondDigit<lastDigit){
+                  System.out.println(secondDigit+" "+lastDigit+" "+firstDigit);
+              }
+              else {
+                  System.out.println(lastDigit+" "+secondDigit+" "+firstDigit);
+              }
+          }
+        }
+    
+        /*if(firstDigit > secondDigit && firstDigit > lastDigit) {
             if(secondDigit > lastDigit) {
                 System.out.println(lastDigit + " " + secondDigit + " " + firstDigit);
 
@@ -32,6 +60,8 @@ public class Problem59 {
             } else {
                 System.out.println(firstDigit + " " + secondDigit + " " + lastDigit);
             }
-        }
+        }*/
+        
+        
     }
 }

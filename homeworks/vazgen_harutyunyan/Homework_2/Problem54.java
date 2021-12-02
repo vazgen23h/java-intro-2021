@@ -6,8 +6,6 @@ public class Problem54 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your number");
         number = scanner.nextInt();
-        max = number % 10;
-        number = number / 10;
         if (max < number % 10) {
             max = number % 10;
         }

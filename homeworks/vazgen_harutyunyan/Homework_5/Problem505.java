@@ -20,11 +20,11 @@ public class Problem505 {
         int[] array = new int[k];
         int number = 1;
         int arrayIndex = 0;
-        int max = matrix[0][0];
+        int max;
         int index = 0;
         for(int i = 0; i < k; i++) {
+            max = matrix[i][0];
             for(int j = 0; j < k; j++) {
-                max = matrix[i][0];
                 if(max < matrix[i][j]) {
                     max = matrix[i][j];
                     index = j;

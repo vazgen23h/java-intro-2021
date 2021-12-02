@@ -16,9 +16,9 @@ public class Problem57 {
         number = number / 10;
         firstDigit = number;
         if(number1 > 300) {
-            System.out.println((double)(secondDigit / ((double)lastDigit)));
+            System.out.println(secondDigit / (double)lastDigit);
         } else {
-            System.out.println((double)(firstDigit / ((double)lastDigit)));
+            System.out.println(firstDigit / (double)lastDigit);
     }
 }
 }
