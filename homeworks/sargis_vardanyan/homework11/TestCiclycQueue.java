@@ -1,72 +1,83 @@
 package homework11;
 
 public class TestCiclycQueue {
-	
+
 	public static void main(String[] args) {
+	
+		CiclycQueue obj = new CiclycQueue(3);
+		obj.add(1);
+		obj.add(2);
+		obj.add(3);
+		obj.printQueue();
+		obj.remove();
+		obj.add(5);
+		obj.printQueue();
 		
-		CiclycQueue queue1 = new CiclycQueue(5);
-		for(int i = 0; i < queue1.queue.length; i++) {
-			queue1.add(i);
-		}
-		queue1.printQueue();
-		
-		
+	
 	}
 
 }
 
 class CiclycQueue {
 
-    int[] queue;
-    int defaultCapacity = 16;
-    int front = -1;
-    int position = -1;
+    private int[] queue;
+    private int position = -1;
+    private int first = -1;
+    private int size = 16;
+
 
     CiclycQueue() {
-        queue = new int[defaultCapacity];
+        queue = new int[size];
     }
 
-    CiclycQueue(int length) {
-        queue = new int[length];
+    CiclycQueue(int size) {
+        this.size = size;
+        queue = new int[size];
     }
 
-    //(position == queue.length - 1 && front == 0) || position == queue.length - 1
-    void add(int n) {
-        if ((position == queue.length - 1 && front == -1)) {
+    public void add(int n) {
+        if ((first == 0 && position == size - 1) || (position == first - 1)) {
             System.out.println("Queue is full: ");
-        } else {
-            if (position == queue.length - 1 && front > 0) {
-                position = -1;
-            }
-            queue[++position] = n;
-        }
-
-    }
-
-    int remove() {
-        if(position == -1) {
-            System.out.println("Queue is empty;");
-            return 0;
-        } else if ((front == queue.length - 1) && position < queue.length -1) {
-            front = 0;
-            return queue[front];
-        }
-        return queue[++front];
-
-    }
-
-    void printQueue() {
-        if (position == -1) {
-            System.out.println("Queue is empty");
             return;
+        } else if (position == size - 1 && first > 0) {
+            position = 0;
+            queue[position] = n;
+            return;
+        } else if (first == -1) {
+            first = 0;
+            queue[first] = n;
         }
-        if (position > front) {
-            for (int i = front + 1; i <= position; i++) {
+        queue[++position] = n;
+    }
+
+    public int remove() {
+        if (first == -1) {
+            System.out.println("Queue is empty: ");
+        } else if (first == position) {
+            int current = queue[first];
+            first = -1;
+            position = -1;
+            return current;
+        } else if (first > position) {
+            int current = queue[first];
+            first = 0;
+            return current;
+        }
+        return queue[first++];
+    }
+
+    public void printQueue() {
+        if (first == -1) {
+            System.out.println("Queue is empty: ");
+            return;
+        } else if (first <= position) {
+            for (int i = first; i <= position; i++) {
                 System.out.print(queue[i] + " ");
             }
             System.out.println();
-        } else if (front < queue.length - 1 && front > position) {
-            for (int i = front + 1; i < queue.length; i++) {
+            return;
+        } else {
+            for (int i = first; i < size; i++) {
                 System.out.print(queue[i] + " ");
             }
 
@@ -74,13 +85,8 @@ class CiclycQueue {
                 System.out.print(queue[i] + " ");
             }
             System.out.println();
-        } else if (front == queue.length - 1) {
-            for (int i = 0; i <= position; i++) {
-                System.out.print(queue[i] + " ");
-            }
-            System.out.println();
-        } 
-
+        }
     }
 
 }
+
