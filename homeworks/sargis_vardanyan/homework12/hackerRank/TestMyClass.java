@@ -6,12 +6,12 @@ public class TestMyClass {
 	
 	public static void main(String[] args) {
 		
-	/*	String time = "07:01:01PM";
-		System.out.println(MyClass.timeConversion(time)); */
+		String time = "07:01:01PM";
+		System.out.println(MyClass.timeConversion(time)); 
 		
-	/*	String a = "Kamikadze";
+		String a = "Kamikadze";
 		String b = "kamikadze";		
-		System.out.println(MyClass.isAnagrams(a, b));  */	
+		System.out.println(MyClass.isAnagrams(a, b));  	
 		
 	}
 	
@@ -70,6 +70,4 @@ class MyClass {
 	
 	}
 	
-	
-
 }
