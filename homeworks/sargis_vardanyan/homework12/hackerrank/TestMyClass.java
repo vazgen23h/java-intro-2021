@@ -1,4 +1,4 @@
-package hackerRank;
+package hackerrank;
 
 
 
@@ -20,12 +20,12 @@ public class TestMyClass {
 class MyClass {
 
 	public static boolean isAnagrams(String a, String b) {
-		int[] arrayA = new int[256];
-		int[] arrayB = new int[256];		
+		short[] arrayA = new short[256];
+		short[] arrayB = new short[256];		
 		
 		if (a.length() != b.length()) return false;
 
-        for (int i = 0; i < a.length(); i++) {
+        for (short i = 0; i < a.length(); i++) {
             if (65 <= a.charAt(i) && a.charAt(i) <= 90) {
                 arrayA[a.charAt(i) + 32]++;
             } else {
@@ -38,7 +38,7 @@ class MyClass {
             }
         }
 
-        for (int i = 0; i < arrayA.length; i++) {
+        for (short i = 0; i < arrayA.length; i++) {
             if (arrayA[i] != arrayB[i]) {
                 return false;
             }
