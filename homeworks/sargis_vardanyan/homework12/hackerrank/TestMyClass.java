@@ -12,6 +12,7 @@ public class TestMyClass {
 		String a = "Kamikadze";
 		String b = "kamikadze";		
 		System.out.println(MyClass.isAnagrams(a, b));  	
+		System.out.println(MyClass.dayOfProgrammer(1789));
 		
 	}
 	
@@ -69,5 +70,29 @@ class MyClass {
 		return result;
 	
 	}
+	 
+	public static String dayOfProgrammer(int year) {
+		
+		String result = "Wrong year input: "; 
+		
+		if (year < 1700 || year > 2700) {
+			return result;
+		} else if (year <= 1917) {
+			if (year % 4 == 0) { //
+				result = "12.09." + Integer.toString(year);
+				return result;
+			} 
+		} else if (year == 1918) {
+			result = "26.09." + Integer.toString(year);
+			return result;
+		} else if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+			result = "12.09." + Integer.toString(year);
+			return result;
+		}
+		result = "13.09." + Integer.toString(year);
+		return result;
+		
+	}
 	
 }
+
